@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme{
+    --color-secondary: #99a1af;
+    --color-primary: #364153;
+    --color-bg-blue: #f0f4ff;
+    --color-bg-gray: #f8f9fa;
+
+}
+
+@layer components{
+    .listItemClass {
+        @apply flex items-center p-2 rounded-md gap-2 font-semibold hover:text-black hover:bg-gray-100 cursor-pointer;
+    }
+    /* Hide scrollbar but allow scroll */
+
+  
+}
+.hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
